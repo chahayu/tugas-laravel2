@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnggotaController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\PetugasController;
+use App\Http\Controllers\RakController;
+use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\PengembalianController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +32,6 @@ Route::get('/form',[PagesController::class,'form']);
 Route::get('/anggota', [AnggotaController::class, 'create'])->name('anggota');
 Route::get('/buku', [BukuController::class, 'create'])->name('buku');
 Route::get('/petugas', [PetugasController::class, 'create'])->name('petugas');
+Route::get('/rak', [RakController::class, 'create'])->name('rak');
+Route::get('/peminjaman', [PeminjamanController::class, 'create'])->name('peminjaman');
+Route::get('/pengembalian', [PengembalianController::class, 'create'])->name('pengembalian');
