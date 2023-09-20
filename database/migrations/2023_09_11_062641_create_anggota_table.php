@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('kode_anggota',9);
             $table->string('nama_anggota',100);
-            $table->char('jk_anggota',1);
-            $table->string('jurusan_anggota',2);
+            $table->char('jk_anggota',3);
+            $table->string('jurusan_anggota',4);
             $table->string('no_telp_anggota',13);
             $table->string('alamat_anggota',100);
             $table->timestamps();
